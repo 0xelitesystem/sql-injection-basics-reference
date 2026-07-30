@@ -8,15 +8,19 @@ SQL injection happens when untrusted input is glued directly into a SQL query st
 
 ## What is inside
 
-- `01-what-sql-injection-is.md` the vulnerability in plain terms.
-- `02-vulnerable-vs-safe-example.md` concrete concatenated query versus a parameterized one.
-- `03-parameterized-queries.md` how prepared statements actually stop it.
-- `04-why-escaping-is-not-enough.md` the limits of escaping and blocklists.
-- `05-least-privilege-and-defense-in-depth.md` limiting the blast radius.
+- [01-what-sql-injection-is.md](01-what-sql-injection-is.md) the vulnerability in plain terms.
+- [02-vulnerable-vs-safe-example.md](02-vulnerable-vs-safe-example.md) concrete concatenated query versus a parameterized one.
+- [03-parameterized-queries.md](03-parameterized-queries.md) how prepared statements actually stop it.
+- [04-why-escaping-is-not-enough.md](04-why-escaping-is-not-enough.md) the limits of escaping and blocklists.
+- [05-least-privilege-and-defense-in-depth.md](05-least-privilege-and-defense-in-depth.md) limiting the blast radius.
 
 ## The stance
 
 This reference is defensive and educational. It shows a vulnerable pattern only so you can recognize and remove it, and it treats parameterized queries as the default correct way to talk to a database. Escaping, validation, and least privilege are supporting layers, not replacements for parameterization.
+
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
 
 ## License
 
